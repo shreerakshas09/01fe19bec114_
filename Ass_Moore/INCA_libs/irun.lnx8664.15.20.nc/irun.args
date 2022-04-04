@@ -1,0 +1,8 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-access
++rwc
+MOORE_FSM_test.v
+MOORE_FSM.v

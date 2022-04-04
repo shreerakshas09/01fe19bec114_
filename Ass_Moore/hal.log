@@ -1,0 +1,410 @@
+hal(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+hal: Options:   -cdslib /home/adld25/Ass_Moore/cds.lib -logfile hal.log worklib.tb_sequence_Detector_Moore_FSM_verilog:module.
+hal: Snapshot:  worklib.tb_sequence_Detector_Moore_FSM_verilog:module.
+hal: Workspace: /home/adld25/Ass_Moore.
+hal: Date: Mon Apr 04 16:27:04 IST 2022.
+
+hal: Running on elaborated SNAPSHOT.....
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+visadev(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+module tb_sequence_Detector_Moore_FSM_verilog;
+|
+halcheck: *W,LCVARN (./MOORE_FSM_test.v,1|0): Module name 'tb_sequence_Detector_Moore_FSM_verilog' uses uppercase characters.
+module tb_sequence_Detector_Moore_FSM_verilog;
+|
+halcheck: *N,IDLENG (./MOORE_FSM_test.v,1|0): Identifier name 'tb_sequence_Detector_Moore_FSM_verilog' is not of appropriate length (4 to 16 characters).
+module tb_sequence_Detector_Moore_FSM_verilog;
+|
+halcheck: *W,DIFFMN (./MOORE_FSM_test.v,1|0): Module name 'tb_sequence_Detector_Moore_FSM_verilog' differs from file name 'MOORE_FSM_test.v'.
+module tb_sequence_Detector_Moore_FSM_verilog;
+|
+halcheck: *W,NEEDIO (./MOORE_FSM_test.v,1|0): Top-level module 'tb_sequence_Detector_Moore_FSM_verilog' has no inputs/outputs/inouts.
+initial begin
+|
+halcheck: *W,NOBLKN (./MOORE_FSM_test.v,15|0): Each block should be labeled with a meaningful name.
+clock=0;
+|
+halcheck: *W,IMPDTC (./MOORE_FSM_test.v,16|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+clock=0;
+|
+halcheck: *W,INTTOB (./MOORE_FSM_test.v,16|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+clock=0;
+|
+halcheck: *W,TRUNCZ (./MOORE_FSM_test.v,16|0): Truncation in constant conversion without a loss of bits in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+forever #5 clock = ~clock;
+|
+halcheck: *W,SEPLIN (./MOORE_FSM_test.v,17|0): Use a separate line for each HDL statement.
+initial begin
+|
+halcheck: *W,NOBLKN (./MOORE_FSM_test.v,19|0): Each block should be labeled with a meaningful name.
+sequence_in=0;
+|
+halcheck: *W,IMPDTC (./MOORE_FSM_test.v,20|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+sequence_in=0;
+|
+halcheck: *W,INTTOB (./MOORE_FSM_test.v,20|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+sequence_in=0;
+|
+halcheck: *W,TRUNCZ (./MOORE_FSM_test.v,20|0): Truncation in constant conversion without a loss of bits in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+reset=1;
+|
+halcheck: *W,IMPDTC (./MOORE_FSM_test.v,21|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+reset=1;
+|
+halcheck: *W,INTTOB (./MOORE_FSM_test.v,21|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+reset=1;
+|
+halcheck: *W,TRUNCZ (./MOORE_FSM_test.v,21|0): Truncation in constant conversion without a loss of bits in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+#30;
+|
+halcheck: *W,EMPSTM (./MOORE_FSM_test.v,23|0): Module 'tb_sequence_Detector_Moore_FSM_verilog' contains an empty statement.
+reset=0;
+|
+halcheck: *W,IMPDTC (./MOORE_FSM_test.v,24|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+reset=0;
+|
+halcheck: *W,INTTOB (./MOORE_FSM_test.v,24|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+reset=0;
+|
+halcheck: *W,TRUNCZ (./MOORE_FSM_test.v,24|0): Truncation in constant conversion without a loss of bits in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+#40;
+|
+halcheck: *W,EMPSTM (./MOORE_FSM_test.v,25|0): Module 'tb_sequence_Detector_Moore_FSM_verilog' contains an empty statement.
+sequence_in=1;
+|
+halcheck: *W,IMPDTC (./MOORE_FSM_test.v,26|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+sequence_in=1;
+|
+halcheck: *W,INTTOB (./MOORE_FSM_test.v,26|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+sequence_in=1;
+|
+halcheck: *W,TRUNCZ (./MOORE_FSM_test.v,26|0): Truncation in constant conversion without a loss of bits in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+#10;
+|
+halcheck: *W,EMPSTM (./MOORE_FSM_test.v,27|0): Module 'tb_sequence_Detector_Moore_FSM_verilog' contains an empty statement.
+sequence_in=0;
+|
+halcheck: *W,IMPDTC (./MOORE_FSM_test.v,28|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+sequence_in=0;
+|
+halcheck: *W,INTTOB (./MOORE_FSM_test.v,28|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+sequence_in=0;
+|
+halcheck: *W,TRUNCZ (./MOORE_FSM_test.v,28|0): Truncation in constant conversion without a loss of bits in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+#10;
+|
+halcheck: *W,EMPSTM (./MOORE_FSM_test.v,29|0): Module 'tb_sequence_Detector_Moore_FSM_verilog' contains an empty statement.
+sequence_in=1;
+|
+halcheck: *W,IMPDTC (./MOORE_FSM_test.v,30|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+sequence_in=1;
+|
+halcheck: *W,INTTOB (./MOORE_FSM_test.v,30|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+sequence_in=1;
+|
+halcheck: *W,TRUNCZ (./MOORE_FSM_test.v,30|0): Truncation in constant conversion without a loss of bits in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+#20;
+|
+halcheck: *W,EMPSTM (./MOORE_FSM_test.v,31|0): Module 'tb_sequence_Detector_Moore_FSM_verilog' contains an empty statement.
+sequence_in=0;
+|
+halcheck: *W,IMPDTC (./MOORE_FSM_test.v,32|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+sequence_in=0;
+|
+halcheck: *W,INTTOB (./MOORE_FSM_test.v,32|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+sequence_in=0;
+|
+halcheck: *W,TRUNCZ (./MOORE_FSM_test.v,32|0): Truncation in constant conversion without a loss of bits in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+#20;
+|
+halcheck: *W,EMPSTM (./MOORE_FSM_test.v,33|0): Module 'tb_sequence_Detector_Moore_FSM_verilog' contains an empty statement.
+sequence_in=1;
+|
+halcheck: *W,IMPDTC (./MOORE_FSM_test.v,34|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+sequence_in=1;
+|
+halcheck: *W,INTTOB (./MOORE_FSM_test.v,34|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+sequence_in=1;
+|
+halcheck: *W,TRUNCZ (./MOORE_FSM_test.v,34|0): Truncation in constant conversion without a loss of bits in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+#20;
+|
+halcheck: *W,EMPSTM (./MOORE_FSM_test.v,35|0): Module 'tb_sequence_Detector_Moore_FSM_verilog' contains an empty statement.
+sequence_in=0;
+|
+halcheck: *W,IMPDTC (./MOORE_FSM_test.v,36|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+sequence_in=0;
+|
+halcheck: *W,INTTOB (./MOORE_FSM_test.v,36|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+sequence_in=0;
+|
+halcheck: *W,TRUNCZ (./MOORE_FSM_test.v,36|0): Truncation in constant conversion without a loss of bits in module/design-unit tb_sequence_Detector_Moore_FSM_verilog.
+sequence_Detector_MOORE_Verilog uut(
+|
+halcheck: *N,IDLENG (./MOORE_FSM_test.v,9|0): Identifier name 'uut' is not of appropriate length (4 to 16 characters).
+module sequence_Detector_MOORE_Verilog(sequence_in,clock,reset,detector_out);
+|
+halcheck: *N,IDLENG (./MOORE_FSM.v,1|0): Identifier name 'sequence_Detector_MOORE_Verilog' is not of appropriate length (4 to 16 characters).
+module sequence_Detector_MOORE_Verilog(sequence_in,clock,reset,detector_out);
+|
+halcheck: *W,LCVARN (./MOORE_FSM.v,1|0): Module name 'sequence_Detector_MOORE_Verilog' uses uppercase characters.
+module sequence_Detector_MOORE_Verilog(sequence_in,clock,reset,detector_out);
+|
+halcheck: *W,DIFFMN (./MOORE_FSM.v,1|0): Module name 'sequence_Detector_MOORE_Verilog' differs from file name 'MOORE_FSM.v'.
+module sequence_Detector_MOORE_Verilog(sequence_in,clock,reset,detector_out);
+|
+halcheck: *N,PRTCNT (./MOORE_FSM.v,1|0): Module/Entity 'sequence_Detector_MOORE_Verilog' contains '4' ports.
+halcheck: (./MOORE_FSM.v,1): Number of Input ports: 3.
+halcheck: (./MOORE_FSM.v,1): Number of Output ports: 1.
+reg[2:0] current_state,next_state;
+|
+halcheck: *W,STYVAL (./MOORE_FSM.v,13|0): Numeric value '2' used for identifier 'current_state'. Use constants to avoid portability issues.
+zero=3'b000,
+|
+halcheck: *W,UCCONN (./MOORE_FSM.v,8|0): Lowercase characters used for identifier 'zero'. Use uppercase characters for names of constants and user-defined types.
+one=3'b001,
+|
+halcheck: *N,IDLENG (./MOORE_FSM.v,9|0): Identifier name 'one' is not of appropriate length (4 to 16 characters).
+one=3'b001,
+|
+halcheck: *W,UCCONN (./MOORE_FSM.v,9|0): Lowercase characters used for identifier 'one'. Use uppercase characters for names of constants and user-defined types.
+onezero=3'b011,
+|
+halcheck: *W,UCCONN (./MOORE_FSM.v,10|0): Lowercase characters used for identifier 'onezero'. Use uppercase characters for names of constants and user-defined types.
+onezeroone=3'b010,
+|
+halcheck: *W,UCCONN (./MOORE_FSM.v,11|0): Lowercase characters used for identifier 'onezeroone'. Use uppercase characters for names of constants and user-defined types.
+onezerooneone=3'b110;
+|
+halcheck: *W,UCCONN (./MOORE_FSM.v,12|0): Lowercase characters used for identifier 'onezerooneone'. Use uppercase characters for names of constants and user-defined types.
+begin
+|
+halcheck: *W,NOBLKN (./MOORE_FSM.v,16|0): Each block should be labeled with a meaningful name.
+if(reset==1)
+|
+halcheck: *W,NBGEND (./MOORE_FSM.v,17|0): Missing begin/end statement in the 'if' block.
+if(reset==1)
+|
+halcheck: *W,ULCMPE (./MOORE_FSM.v,17|0): Unequal length operands in equality operator encountered (padding produces incorrect result) in module/design-unit uut. LHS operand is 1 bits, RHS operand is 32 bits.
+begin
+|
+halcheck: *W,NOBLKN (./MOORE_FSM.v,25|0): Each block should be labeled with a meaningful name.
+if(sequence_in==1)
+|
+halcheck: *W,NBGEND (./MOORE_FSM.v,28|0): Missing begin/end statement in the 'if' block.
+if(sequence_in==1)
+|
+halcheck: *W,ULCMPE (./MOORE_FSM.v,28|0): Unequal length operands in equality operator encountered (padding produces incorrect result) in module/design-unit uut. LHS operand is 1 bits, RHS operand is 32 bits.
+if(sequence_in==0)
+|
+halcheck: *W,NBGEND (./MOORE_FSM.v,34|0): Missing begin/end statement in the 'if' block.
+if(sequence_in==0)
+|
+halcheck: *W,ULCMPE (./MOORE_FSM.v,34|0): Unequal length operands in equality operator encountered (padding produces incorrect result) in module/design-unit uut. LHS operand is 1 bits, RHS operand is 32 bits.
+if(sequence_in==0)
+|
+halcheck: *W,NBGEND (./MOORE_FSM.v,40|0): Missing begin/end statement in the 'if' block.
+if(sequence_in==0)
+|
+halcheck: *W,ULCMPE (./MOORE_FSM.v,40|0): Unequal length operands in equality operator encountered (padding produces incorrect result) in module/design-unit uut. LHS operand is 1 bits, RHS operand is 32 bits.
+if(sequence_in==0)
+|
+halcheck: *W,NBGEND (./MOORE_FSM.v,46|0): Missing begin/end statement in the 'if' block.
+if(sequence_in==0)
+|
+halcheck: *W,ULCMPE (./MOORE_FSM.v,46|0): Unequal length operands in equality operator encountered (padding produces incorrect result) in module/design-unit uut. LHS operand is 1 bits, RHS operand is 32 bits.
+if(sequence_in==0)
+|
+halcheck: *W,NBGEND (./MOORE_FSM.v,52|0): Missing begin/end statement in the 'if' block.
+if(sequence_in==0)
+|
+halcheck: *W,ULCMPE (./MOORE_FSM.v,52|0): Unequal length operands in equality operator encountered (padding produces incorrect result) in module/design-unit uut. LHS operand is 1 bits, RHS operand is 32 bits.
+begin
+|
+halcheck: *W,NOBLKN (./MOORE_FSM.v,63|0): Each block should be labeled with a meaningful name.
+zero: detector_out = 0;
+|
+halcheck: *W,IMPDTC (./MOORE_FSM.v,65|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit uut.
+zero: detector_out = 0;
+|
+halcheck: *W,INTTOB (./MOORE_FSM.v,65|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit uut.
+zero: detector_out = 0;
+|
+halcheck: *W,TRUNCZ (./MOORE_FSM.v,65|0): Truncation in constant conversion without a loss of bits in module/design-unit uut.
+one: detector_out = 0;
+|
+halcheck: *W,IMPDTC (./MOORE_FSM.v,66|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit uut.
+one: detector_out = 0;
+|
+halcheck: *W,INTTOB (./MOORE_FSM.v,66|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit uut.
+one: detector_out = 0;
+|
+halcheck: *W,TRUNCZ (./MOORE_FSM.v,66|0): Truncation in constant conversion without a loss of bits in module/design-unit uut.
+onezero: detector_out = 0;
+|
+halcheck: *W,IMPDTC (./MOORE_FSM.v,67|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit uut.
+onezero: detector_out = 0;
+|
+halcheck: *W,INTTOB (./MOORE_FSM.v,67|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit uut.
+onezero: detector_out = 0;
+|
+halcheck: *W,TRUNCZ (./MOORE_FSM.v,67|0): Truncation in constant conversion without a loss of bits in module/design-unit uut.
+onezeroone: detector_out = 0;
+|
+halcheck: *W,IMPDTC (./MOORE_FSM.v,68|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit uut.
+onezeroone: detector_out = 0;
+|
+halcheck: *W,INTTOB (./MOORE_FSM.v,68|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit uut.
+onezeroone: detector_out = 0;
+|
+halcheck: *W,TRUNCZ (./MOORE_FSM.v,68|0): Truncation in constant conversion without a loss of bits in module/design-unit uut.
+onezerooneone: detector_out = 1;
+|
+halcheck: *W,IMPDTC (./MOORE_FSM.v,69|0): Expression '1' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit uut.
+onezerooneone: detector_out = 1;
+|
+halcheck: *W,INTTOB (./MOORE_FSM.v,69|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit uut.
+onezerooneone: detector_out = 1;
+|
+halcheck: *W,TRUNCZ (./MOORE_FSM.v,69|0): Truncation in constant conversion without a loss of bits in module/design-unit uut.
+default: detector_out = 0;
+|
+halcheck: *W,IMPDTC (./MOORE_FSM.v,70|0): Expression '0' implicitly converted to type 'unsigned' from type 'signed' in module/design-unit uut.
+default: detector_out = 0;
+|
+halcheck: *W,INTTOB (./MOORE_FSM.v,70|0): Assigning a 0 or 1 (32 bits) to a single-bit variable in module/design-unit uut.
+default: detector_out = 0;
+|
+halcheck: *W,TRUNCZ (./MOORE_FSM.v,70|0): Truncation in constant conversion without a loss of bits in module/design-unit uut.
+wire detector_out;
+|
+halcheck: *W,URDWIR (./MOORE_FSM_test.v,7|0): Wire 'detector_out' defined in module 'tb_sequence_Detector_Moore_FSM_verilog' does not drive any object, but is assigned at least once.
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 85.
+
+  ==========================================================================
+Performing synthesizability checks 
+
+cfe64: 15.20.051-s(15.20.s051): (c) Copyright 1995 - 2018 Cadence Design Systems, Inc.
+cfe64 Build : Mon May  7 17:15:12 IST 2018 ldvopt246
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+current_state <= next_state;
+|
+halsynth: *N,FSMIDN (./MOORE_FSM.v,20|0): In module/design-unit 'sequence_Detector_MOORE_Verilog', FSM for state register 'current_state' has been recognized.
+always @(posedge clock,posedge reset)
+|
+halsynth: *W,BADFSM (./MOORE_FSM.v,15|0): In module/design-unit 'sequence_Detector_MOORE_Verilog', FSM for state register 'current_state' does not adhere to modeling style guidelines.
+always @(current_state,sequence_in)
+|
+halsynth: (./MOORE_FSM.v,24|0): Source HDL information for the error/warning mentioned above.
+always @(current_state)
+|
+halsynth: (./MOORE_FSM.v,62|0): Source HDL information for the error/warning mentioned above.
+onezero:begin
+|
+halsynth: *W,TRNMBT (./MOORE_FSM.v,39|0): For the specified state '3', the state value changes by more than one bits on transition to state(s): 0.
+next_state =zero;
+|
+halsynth: (./MOORE_FSM.v,41|0): Source HDL information for the error/warning mentioned above.
+onezerooneone:begin
+|
+halsynth: *W,TRNMBT (./MOORE_FSM.v,51|0): For the specified state '6', the state value changes by more than one bits on transition to state(s): 3, 1.
+next_state = onezero;
+|
+halsynth: (./MOORE_FSM.v,53|0): Source HDL information for the error/warning mentioned above.
+next_state = one;
+|
+halsynth: (./MOORE_FSM.v,55|0): Source HDL information for the error/warning mentioned above.
+initial begin
+|
+halsynth: *W,INIUSP (./MOORE_FSM_test.v,15|0): Module tb_sequence_Detector_Moore_FSM_verilog has an initial block or a variable declaration assignment, which is ignored by synthesis tools.
+initial begin
+|
+halsynth: *W,INIUSP (./MOORE_FSM_test.v,19|0): Module tb_sequence_Detector_Moore_FSM_verilog has an initial block or a variable declaration assignment, which is ignored by synthesis tools.
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 5.
+
+  ==========================================================================
+Performing structural checks 
+
+halstruct(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+visadev(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+module sequence_Detector_MOORE_Verilog(sequence_in,clock,reset,detector_out);
+|
+halstruct: *W,SYNASN (./MOORE_FSM.v,1|0): The module/design-unit 'sequence_Detector_MOORE_Verilog' contains synchronous as well as asynchronous logic.
+halstruct: (./MOORE_FSM.v,57): One instance/occurence of asynchronous logic at 'tb_sequence_Detector_Moore_FSM_verilog.uut.next_state'.
+halstruct: (./MOORE_FSM.v,20): One instance/occurence of synchronous logic at 'tb_sequence_Detector_Moore_FSM_verilog.uut.current_state'.
+sequence_Detector_MOORE_Verilog uut(
+|
+halstruct: *E,UNCONI (./MOORE_FSM_test.v,9|0): Input port 'sequence_in' of entity/module 'sequence_Detector_MOORE_Verilog' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'tb_sequence_Detector_Moore_FSM_verilog.uut'.
+halstruct: (./MOORE_FSM_test.v,9): 'sequence_in' mapped to actual expression 'sequence_in' which is undriven.
+sequence_Detector_MOORE_Verilog uut(
+|
+halstruct: *E,UNCONI (./MOORE_FSM_test.v,9|0): Input port 'clock' of entity/module 'sequence_Detector_MOORE_Verilog' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'tb_sequence_Detector_Moore_FSM_verilog.uut'.
+halstruct: (./MOORE_FSM_test.v,9): 'clock' mapped to actual expression 'clock' which is undriven.
+sequence_Detector_MOORE_Verilog uut(
+|
+halstruct: *E,UNCONI (./MOORE_FSM_test.v,9|0): Input port 'reset' of entity/module 'sequence_Detector_MOORE_Verilog' is being used inside architecture/module, but not connected (either partially or completely) in its instance 'tb_sequence_Detector_Moore_FSM_verilog.uut'.
+halstruct: (./MOORE_FSM_test.v,9): 'reset' mapped to actual expression 'reset' which is undriven.
+sequence_Detector_MOORE_Verilog uut(
+|
+halstruct: *W,UNCONO (./MOORE_FSM_test.v,9|0): Port 'detector_out' (which is being used as an output) of entity/module 'sequence_Detector_MOORE_Verilog' is being driven inside the design, but not connected (either partially or completely) in its instance 'tb_sequence_Detector_Moore_FSM_verilog.uut'.
+default: detector_out = 0;
+|
+halstruct: *W,SYNPRT (./MOORE_FSM.v,70|0): Output port 'detector_out' is assigned asynchronously.
+current_state <= next_state;
+|
+halstruct: *W,ASNRST (./MOORE_FSM.v,20|0): Flip-flop 'tb_sequence_Detector_Moore_FSM_verilog.uut.current_state' has 'active_high' asynchronous set/reset 'reset' as against the recommended 'active_low' style.
+current_state <= next_state;
+|
+halstruct: *N,FFASRT (./MOORE_FSM.v,20|0): Flip-flop 'current_state' has an asynchronous reset 'reset'.
+input clock;
+|
+halstruct: *N,CLKINF (./MOORE_FSM.v,2|0): Signal 'tb_sequence_Detector_Moore_FSM_verilog.uut.clock' was inferred as clock.
+halstruct: (./MOORE_FSM.v,2): Clock source is signal 'tb_sequence_Detector_Moore_FSM_verilog.uut.clock'.
+halstruct: (./MOORE_FSM.v,20): Drives the flip-flop 'tb_sequence_Detector_Moore_FSM_verilog.uut.current_state'.
+current_state <= next_state;
+|
+halstruct: *W,ACNCPI (./MOORE_FSM.v,20|0): Asynchronous reset 'reset' of latch/flip-flop 'tb_sequence_Detector_Moore_FSM_verilog.uut.current_state' is not controllable from primary inputs.
+current_state <= next_state;
+|
+halstruct: *W,CLKNPI (./MOORE_FSM.v,20|0): Flip-flop 'tb_sequence_Detector_Moore_FSM_verilog.uut.current_state' has clock 'clock' which is not derived from primary input.
+halstruct: (./MOORE_FSM_test.v,3): Derived from local variable 'clock'.
+module tb_sequence_Detector_Moore_FSM_verilog;
+|
+halstruct: *N,NUMDFF (./MOORE_FSM_test.v,1|0): Number of single-bit D flip-flops present in the hierarchy is 3.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 3.
+halstruct: Total warnings = 6.
+
+  ==========================================================================
+
+Analysis summary :
+
+ Errors   : (3)
+  UNCONI (3)     
+
+ Warnings : (96)
+  ACNCPI (1)      ASNRST (1)      BADFSM (1)      CLKNPI (1)     
+  DIFFMN (2)      EMPSTM (7)      IMPDTC (16)     INIUSP (2)     
+  INTTOB (16)     LCVARN (2)      NBGEND (6)      NEEDIO (1)     
+  NOBLKN (5)      SEPLIN (1)      STYVAL (1)      SYNASN (1)     
+  SYNPRT (1)      TRNMBT (2)      TRUNCZ (16)     UCCONN (5)     
+  ULCMPE (6)      UNCONO (1)      URDWIR (1)     
+
+ Notes    : (9)
+  CLKINF (1)      FFASRT (1)      FSMIDN (1)      IDLENG (4)     
+  NUMDFF (1)      PRTCNT (1)     
+
+Analysis complete.
+
+ ==========================================================================
+
+To analyze results, run following command :
+    ncbrowse -64bit -cdslib /home/adld25/Ass_Moore/cds.lib -sortby severity -sortby category -sortby tag hal.log
+
