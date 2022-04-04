@@ -1,0 +1,115 @@
+hal(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+hal: Options:   -cdslib /home/adld15/241/up_counter/cds.lib -logfile hal.log worklib.up_counter:module.
+hal: Snapshot:  worklib.up_counter:module.
+hal: Workspace: /home/adld15/241/up_counter.
+hal: Date: Mon Apr 04 16:33:07 IST 2022.
+
+hal: Running on elaborated SNAPSHOT.....
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+visadev(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+module up_counter(input clk,reset,output[3:0] counter);
+|
+halcheck: *W,DIFFMN (./up_counter_tb.v,18|0): Module name 'up_counter' differs from file name 'up_counter_tb.v'.
+module up_counter(input clk,reset,output[3:0] counter);
+|
+halcheck: *N,PRTCNT (./up_counter_tb.v,18|0): Module/Entity 'up_counter' contains '3' ports.
+halcheck: (./up_counter_tb.v,18): Number of Input ports: 2.
+halcheck: (./up_counter_tb.v,18): Number of Output ports: 1.
+module up_counter(input clk,reset,output[3:0] counter);
+|
+halcheck: *N,DECLIN (./up_counter_tb.v,18|0): Use a separate line for each HDL declaration.
+module up_counter(input clk,reset,output[3:0] counter);
+|
+halcheck: *W,STYVAL (./up_counter_tb.v,18|0): Numeric value '3' used for identifier 'counter'. Use constants to avoid portability issues.
+reg[3:0] counter_up;
+|
+halcheck: *W,STYVAL (./up_counter_tb.v,19|0): Numeric value '3' used for identifier 'counter_up'. Use constants to avoid portability issues.
+begin
+|
+halcheck: *W,NOBLKN (./up_counter_tb.v,21|0): Each block should be labeled with a meaningful name.
+if(reset)
+|
+halcheck: *W,NBGEND (./up_counter_tb.v,22|0): Missing begin/end statement in the 'if' block.
+counter_up=counter_up+4'd1;
+|
+halcheck: *E,BLNBLK (./up_counter_tb.v,25|0): Signal 'counter_up' is assigned via both blocking and non-blocking assignments.
+halcheck: (./up_counter_tb.v,25): Blocking assignment to counter_up.
+halcheck: (./up_counter_tb.v,23): Non blocking assignment to counter_up.
+counter_up=counter_up+4'd1;
+|
+halcheck: *W,BLKSQB (./up_counter_tb.v,25|0): Blocking assignment encountered in a sequential block.
+counter_up=counter_up+4'd1;
+|
+halcheck: *W,POIASG (./up_counter_tb.v,25|0): The result of addition operation may lead to a potential overflow in module/design-unit up_counter.
+halcheck: (./up_counter_tb.v,25): LHS operand 'counter_up' is 4 bit(s), RHS operand 'counter_up + 4'd1' is 5 bit(s).
+halcheck: (./up_counter_tb.v,25): Increase the size of LHS by 1 bit(s).
+counter_up=counter_up+4'd1;
+|
+halcheck: *W,RDBFAS (./up_counter_tb.v,25|0): Register 'counter_up', assigned using blocking assignment, is being read before getting assigned.
+assign counter=counter_up;
+|
+halcheck: *W,REVROP (./up_counter_tb.v,27|0): Register 'counter_up' is being read/assigned outside the process in which it was assigned using a blocking assignment.
+halcheck: (./up_counter_tb.v,20): Assigned using blocking assignment in this process.
+halcheck: Total errors   = 1.
+halcheck: Total warnings = 9.
+
+  ==========================================================================
+Performing synthesizability checks 
+
+cfe64: 15.20.051-s(15.20.s051): (c) Copyright 1995 - 2018 Cadence Design Systems, Inc.
+cfe64 Build : Mon May  7 17:15:12 IST 2018 ldvopt246
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 0.
+
+  ==========================================================================
+Performing structural checks 
+
+halstruct(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+visadev(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+counter_up=counter_up+4'd1;
+|
+halstruct: *W,ASNRST (./up_counter_tb.v,25|0): Flip-flop 'up_counter.counter_up' has 'active_high' asynchronous set/reset 'reset' as against the recommended 'active_low' style.
+counter_up=counter_up+4'd1;
+|
+halstruct: *N,FFASRT (./up_counter_tb.v,25|0): Flip-flop 'counter_up' has an asynchronous reset 'reset'.
+module up_counter(input clk,reset,output[3:0] counter);
+|
+halstruct: *N,CLKINF (./up_counter_tb.v,18|0): Signal 'up_counter.clk' was inferred as clock.
+halstruct: (./up_counter_tb.v,18): Clock source is signal 'up_counter.clk'.
+halstruct: (./up_counter_tb.v,25): Drives the flip-flop 'up_counter.counter_up'.
+module up_counter(input clk,reset,output[3:0] counter);
+|
+halstruct: *N,NUMDFF (./up_counter_tb.v,18|0): Number of single-bit D flip-flops present in the hierarchy is 4.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 0.
+halstruct: Total warnings = 1.
+
+  ==========================================================================
+
+Analysis summary :
+
+ Errors   : (1)
+  BLNBLK (1)     
+
+ Warnings : (10)
+  ASNRST (1)      BLKSQB (1)      DIFFMN (1)      NBGEND (1)     
+  NOBLKN (1)      POIASG (1)      RDBFAS (1)      REVROP (1)     
+  STYVAL (2)     
+
+ Notes    : (5)
+  CLKINF (1)      DECLIN (1)      FFASRT (1)      NUMDFF (1)     
+  PRTCNT (1)     
+
+Analysis complete.
+
+ ==========================================================================
+
+To analyze results, run following command :
+    ncbrowse -64bit -cdslib /home/adld15/241/up_counter/cds.lib -sortby severity -sortby category -sortby tag hal.log
+
